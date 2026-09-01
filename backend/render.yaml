@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: hangout-backend
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application"
